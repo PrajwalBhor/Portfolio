@@ -1,0 +1,214 @@
+/* 🌎 Global Reset */
+body {
+  margin: 0;
+  background: black;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* 🎇 Night Sky Background with Twinkling Stars */
+.homepage {
+  height: 100vh;
+  background: url('') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 📽 Background Video */
+.homepage .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Keeps the video in the background */
+}
+
+/* Hide the video on all other pages */
+.page:not(.homepage) .bg-video {
+  display: none;
+}
+
+/* ℹ️ Information Box */
+.info-box {
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  width: 380px;
+  padding: 160px;
+}
+
+/* 📝 Title (H1) */
+.info-box h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 19%;
+}
+
+/* 📝 Subtitle (H2) */
+.info-box h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  margin: 5px 0;
+}
+
+/* 📝 Description (H3) */
+.info-box h3 {
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+  color: white;
+  margin: 2% 0;
+}
+
+/* 🔥 Dynamic Text Animation */
+.changing-text {
+  color: rgb(255, 0, 0);
+  font-size: 35px;
+}
+
+/* 📥 Download Button */
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff5733, #ff8c00);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #ff8c00, #ff5733);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼 Profile Image Box */
+.profile-box img {
+  width: 52%;
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  transform: rotateY(20deg);
+}
+
+/* 🌐 Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 22px;
+  color: white;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #817f7f; /* Hover Color */
+}
+
+/* 📱 Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  
+  .homepage {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centers text properly */
+  }
+
+  .info-box {
+    text-align: center; 
+    position: relative;
+    width: 90%;
+    padding: 0px;
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column; /* Ensures elements are stacked vertically */
+    align-items: center; /* Centers items horizontally */
+}
+
+/* Heading styles */
+.info-box h1, 
+.info-box h2, 
+.info-box h3 {
+    position: static;
+    text-align: center; /* Centers text */
+    width: 100%; /* Ensures they don’t shrink */
+}
+
+/* Social icons container */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; /* Places icons one below the other */
+    align-items: center; /* Centers icons */
+    gap: 15px;
+}
+
+/* Social icons */
+.social-icons a {
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+  .changing-text {
+    font-size: 28px;
+  }
+
+  .download-btn {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  /* 📸 Profile Image - Centered for Mobile */
+  .profile-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensures the image appears below the text */
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .profile-box img {
+    width: 80%;
+    max-width: 350px;
+    position: relative;
+    transform: none;
+    margin-top: -100px; /* Adds space between text and image */
+    top: 2px;
+    right: 0;
+  }
+
+  /* Fix for pages going in between */
+  .page {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,101 @@
+/* Background Styling */
+.contact-page {
+    background: url("../Images/contact-Background.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Contact Container */
+.contact-container {
+    text-align: center;
+    position: relative;
+    left: -145px;
+    top: 70px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    /* margin-left: -300px; */
+    border-radius: 15px;
+    width: 50%;
+ 
+    margin-left: 10%;
+    max-width: 200px;
+   
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Title Styling */
+.contact-title {
+    position: relative;
+    top: -160px;
+    left: 250px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #222; /* Dark grey for better readability */
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for better visibility */
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+}
+
+
+/* Icons Styling */
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    /* Makes items stack vertically */
+    align-items: center;
+    /* Centers icons horizontally */
+    gap: 15px;
+    
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 2rem;
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.gmail {
+    background-color: #ea4335;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.instagram {
+    background-color: #E1306C;
+}
+
+.call {
+    background-color: #0088CC;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 30px;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .icon {
+        font-size: 1.8rem;
+    }
+}

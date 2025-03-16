@@ -1,0 +1,94 @@
+.about-page {
+  background-image: url("../Images/about-Background.jpg"); /* Adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.about-container {
+  max-width: 1200px;
+  max-height: 600px;
+  background: rgba(0, 0, 0, 0.6); /* Slightly transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  /* color: #f8c471; Golden color for highlight */
+  
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #ffcc00; /* Yellow for headings */
+}
+
+.intro {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ffcc00; /* Highlight name */
+}
+
+.section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.0rem;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about-page {
+    height: auto; /* Remove fixed height for flexibility */
+    padding: 40px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .about-container {
+    max-width: 95%; /* Reduce width for small screens */
+    max-height: none; /* Allow content to expand naturally */
+    padding: 20px; /* Reduce padding */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Slightly smaller title */
+    text-align: left; /* Center text on mobile */
+  }
+
+  h2 {
+    font-size: 1.1rem; /* Adjust subtitle size */
+    text-align: left; /* Center subtitle */
+  }
+
+  .intro, .section {
+    font-size: 1rem; /* Reduce text size for readability */
+    text-align: justify; /* Align text neatly */
+  }
+
+  ul li {
+    font-size: 0.95rem; /* Slightly smaller list items */
+  }
+}

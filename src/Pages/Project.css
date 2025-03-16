@@ -1,0 +1,171 @@
+/* General Page Styling */
+.project-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background Video */
+.project-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%) contrast(110%);
+}
+
+/* Project Content */
+.project-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.project-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  /* margin-top: 10px; */
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+/* Project Cards */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column; /* Ensures button stays at the bottom */
+  justify-content: flex-end; /* Pushes content to the top, button at bottom */
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 25px;
+  height: 220px;
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Project Info */
+.project-info h2 {
+  font-size: 1.6rem;
+  margin: 20px 30px;
+  /* margin-top: 100px; */
+  font-weight: bold;
+}
+
+.project-info p {
+  font-size: 1.1rem;
+  margin-bottom: 19px;
+  opacity: 0.9;
+}
+
+.project-info a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 18px;
+  margin : 8px 8px ;
+  background: #ff0000;
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.project-info a:hover {
+  background: rgb(255, 100, 100);
+  color: black;
+  transform: scale(1.05);
+}
+
+/* See More Button */
+.see-more {
+  padding: 12px 18px;
+  margin-bottom: 9px; /* Add space at the bottom */
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.see-more:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+} 
+
+/* Change Dialog Title Color */
+.MuiDialogTitle-root {
+  color: #007bff !important;
+  font-weight: bold;
+}
+
+/* Change Dialog Content Text Color */
+.MuiDialogContent-root {
+  color: #333 !important;
+  font-size: 16px;
+}
+
+/* Change Dialog Button Color */
+.MuiDialogActions-root button {
+  color: #007bff !important;
+  font-weight: bold;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-content h1 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}

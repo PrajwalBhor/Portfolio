@@ -1,0 +1,130 @@
+/* Education Page Styles */
+.education-page {
+  background-image: url("../Images/education-Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  
+  text-align: center;
+  color: #fff; /* White text */
+  padding: 50px 20px;
+}
+
+/* Education Container */
+.education-container {
+  max-width: 750px;
+  max-height: 600px;
+  width: 70%;
+  text-align: left;
+  box-align: left;
+ /* Dark transparent background */
+  background: rgba(0, 0, 0, 0.1); 
+  padding: 30px;
+  margin-left:100px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title Styling */
+.education-title {
+  font-size: 2.0rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left:140px;
+  margin-top:100px;
+  color: #ffcc00; /* Golden highlight */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.5);
+  
+}
+
+.education-title:hover{
+  text-underline-position: white;
+}
+
+/* Education Card */
+.education-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px;
+  border-radius: 10px;
+  margin:15px 0;
+  padding-left: 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.education-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Degree Styling */
+.degree {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* College Name */
+.college {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+/* Year & Score */
+.year, .score {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-page {
+    height: auto; /* Allow content to expand */
+    padding: 30px 15px; /* Adjust padding */
+    align-items: center; /* Center the content */
+  }
+
+  .education-container {
+    width: 90%; /* Reduce width for smaller screens */
+    max-height: none; /* Allow content to expand */
+    padding: 20px; /* Reduce padding */
+    margin-left: 0; /* Center align on mobile */
+    text-align: center; /* Align text properly */
+  }
+
+  .education-title {
+    font-size: 1.8rem; /* Reduce title size */
+    margin-left: 0;
+    text-align: center;
+    margin-top: 20px; /* Adjust spacing */
+  }
+
+  .education-card {
+    padding-left: 15px; /* Reduce left padding */
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .degree {
+    font-size: 1.2rem; /* Adjust text size */
+  }
+
+  .college {
+    font-size: 1rem;
+  }
+
+  .year, .score {
+    font-size: 0.9rem; /* Adjust for readability */
+  }
+}
