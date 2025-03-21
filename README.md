@@ -28,14 +28,19 @@ Ensure you have the following installed on your system:
 
 ### Clone the Repository  
 To get started, clone the repository to your local machine:  
-```sh
+
 git clone https://github.com/PrajwalBhor/Portfolio
+
 
 
 ### Navigate to the Project Directory
 
-cd HealthCare-Management-System
+cd portfolio
 
 ### Install Dependencies
 
-npm run dev
+npm install
+
+### Run the Application
+
+npm start
